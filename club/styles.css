@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Poppins:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -7,32 +7,74 @@
 }
 
 body {
-    background-color: #0b0505;
+    background-color: black;
     color: white;
 }
 
-.container {
+nav {
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 40px;
+    list-style: none;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
 }
 
+.logo {
+    margin-left: 20px;
+}
 
-.box1 {
-    flex-basis: 40%;
-    margin-top: 60px;
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+    color: white;
+}
+
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellowgreen;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: yellowgreen;
+}
+
+.logo img {
+    width: 10%;
+}
+
+.container {
+    padding: 20px;
 }
 
 .heading {
     font-size: 35px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
-    line-height: 60px;
     overflow: hidden;
+    text-transform: capitalize;
     margin-block: 40px;
+    color: white;
     white-space: nowrap;
     border-right: 3px solid white;
     animation: typing 3s steps(40) forwards;
@@ -48,92 +90,70 @@ body {
     }
 
     to {
-        width: 100%;
+        width: 50%;
     }
 }
 
-.login {
-    font-size: 20px;
-    margin-top: 20px;
+.content p {
+    margin-block: 10px;
+    line-height: 30px;
     padding-block: 10px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-.login p{
     text-transform: capitalize;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
 }
 
-.formbox {
+.about {
+    text-transform: capitalize;
+    margin-block: 40px;
+}
+
+.about h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.about p {
+    margin-block: 10px;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
+}
+
+.about h4 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.socialMedia ul {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    align-items: center;
-    border: 2px solid white;
-    margin-inline: 140px;
-    border-radius: 10px;
-    position: relative;
+    justify-content: space-evenly;
+    padding: 20px;
+    list-style: none;
+    color: yellowgreen;
 }
 
-.formLogo {
-    position: absolute;
-    top: -28px;
-    left: 145px;
-    background-color: rgb(100, 162, 6);
-    color: rgb(50, 50, 50);
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 50%;
-    font-size: 30px;
+.socialMedia ul a {
+    color: yellowgreen;
+    text-decoration: none;
 }
 
-.check {
-    display: flex;
-    margin-inline: 159px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    font-size: 10px;
-    gap: 5px;
-    margin-top: 20px;
-    text-align: start;
+.socialMedia ul li:hover {
+    transition: transform 0.2s;
 }
 
-input[type='email'],
-input[type='password'],
-input::placeholder {
-    width: 80%;
-    background-color: black;
+.socialMedia ul li:hover {
+    transform: translateY(-6px);
+}
+
+.socialMedia ul i {
     color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 13px;
 }
 
-input:focus {
-    outline-style: none;
-}
-
-button {
-    width: 70%;
-    border: 2px solid white;
-    background-color: rgb(131, 210, 13);
-    color: white;
-    border-radius: 10px;
-    padding: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    color: rgb(131, 210, 13);
-    background-color: white;
-    cursor: pointer;
-}
-
-.box2 {
-    flex-basis: 40%;
+.socialMedia h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
