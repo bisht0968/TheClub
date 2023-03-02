@@ -1,0 +1,383 @@
+@media (max-width: 600px) {
+    .none {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: rgb(25, 25, 25);
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: greenyellow;
+        margin: 0;
+        flex-direction: column;
+        width: 30%;
+        height: 90vh;
+        border-bottom-left-radius: 10px;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .navbar img {
+        width: 30%;
+    }
+
+    #sidebarCross {
+        position: absolute;
+        top: 10;
+        left: 10;
+    }
+
+    .sidebar i {
+        font-size: 20px;
+        color: black;
+    }
+
+    #bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    #bar i {
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar a {
+        color: black;
+    }
+
+    .gehu{
+        text-align: center;
+    }
+
+    .gehu img:hover{
+        transform: none;
+    }
+
+    #bar,
+    #sidebarCross {
+        display: block;
+    }
+
+    /* ----------------------Heading--------------- */
+
+
+    .heading {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .heading img {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .moto {
+        font-size: 10px;
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing2 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes typing3 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes cursor {
+        0% {
+            border-color: transparent;
+        }
+    }
+
+    /* ------------------Images--------------------- */
+
+    .images {
+        width: 80%;
+    }
+
+    .imageSlider {
+        margin-block: 20px;
+    }
+
+    /* ------------------Contact---------------------- */
+
+
+    .socialMedia h4 {
+        margin-block: 0;
+    }
+
+    .socialMedia ul {
+        display: flex;
+        gap: 6px 60px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .socialMedia ul li {
+        margin-block: 10px;
+    }
+}
+
+@media(min-width:600px) and (max-width:768px) {
+    .none {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        background-color: rgb(25, 25, 25);
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: greenyellow;
+        margin: 0;
+        flex-direction: column;
+        width: 20%;
+        height: 90vh;
+        border-bottom-left-radius: 10px;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #sidebarCross {
+        position: absolute;
+        top: 10;
+        left: 10;
+    }
+
+    .sidebar i {
+        font-size: 20px;
+        color: black;
+    }
+
+    #bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    #bar i {
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar img {
+        width: 30%;
+    }
+
+    .navbar a {
+        color: black;
+    }
+
+    #bar,
+    #sidebarCross {
+        display: block;
+    }
+
+    .heading {
+        margin-top: 80px;
+    }
+
+    .headingImage {
+        display: none;
+    }
+
+    .moto {
+        animation-delay: 2s;
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing2 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes typing3 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+@media(min-width:768px)and (max-width:992px) {
+    .logo {
+        width: 8%;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .moto {
+        animation-delay: 2s;
+    }
+
+    .heading {
+        margin-top: 60px;
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing2 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes typing3 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .logo {
+        width: 6%;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .moto {
+        animation-delay: 2s;
+    }
+
+    @keyframes typing1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+            border-color: transparent;
+        }
+    }
+
+    @keyframes typing2 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes typing3 {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}

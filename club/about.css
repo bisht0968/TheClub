@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+    color: white;
+}
+
+.navbar li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellowgreen;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    color: yellowgreen;
+}
+
+.navbar img {
+    width: 8%;
+}
+
+.gehu {
+    text-align: end;
+}
+
+.gehu img {
+    transition: all 0.2s;
+    border-radius: 2px;
+}
+
+.gehu img:hover {
+    transform: translatey(-5px);
+}
+
+#bar,
+#sidebarCross {
+    display: none;
+}
+
+.logo img {
+    width: 10%;
+}
+
+.container {
+    padding: 20px;
+}
+
+.content p {
+    margin-block: 10px;
+    line-height: 30px;
+    padding-block: 10px;
+    text-transform: capitalize;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
+}
+
+.about {
+    text-transform: capitalize;
+    margin-block: 40px;
+    margin-top: 116px;
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.about p {
+    margin-block: 10px;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
+}
+
+.about h4 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(47, 47, 47);
+    margin-block-start: 20px;
+}

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Poppins:wght@200&family=Rampart+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --heading-font-family: 'Rampart One', cursive;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-family: var(--font-family);
+    align-items: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: 900;
+    position: relative;
+    color: white;
+}
+
+.navbar li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellowgreen;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    color: yellowgreen;
+}
+
+.logo img {
+    width: 10%;
+}
+
+.navbar img {
+    width: 8%;
+}
+
+.gehu {
+    text-align: end;
+}
+
+.gehu img {
+    transition: all 0.2s;
+    border-radius: 2px;
+}
+
+.gehu img:hover {
+    transform: translatey(-5px);
+}
+
+#bar,
+#sidebarCross {
+    display: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.heading {
+    font-size: 35px;
+    text-align: start;
+    font-family: var(--heading-font-family);
+    text-transform: capitalize;
+    margin-block: 40px;
+    margin-top: 116px;
+    position: relative;
+    color: white;
+}
+
+.title {
+    border-right: 3px solid white;
+    animation: typing1 2s steps(40) forwards, cursor 0.4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.subtitle {
+    border-right: 3px solid white;
+    animation: typing2 2s steps(40) forwards, cursor 0.4s step-end infinite alternate;
+    white-space: nowrap;
+    animation-delay: 1s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.heading span {
+    color: greenyellow;
+}
+
+.moto {
+    text-transform: capitalize;
+    color: greenyellow;
+    font-weight: bold;
+    position: absolute;
+    bottom: -29px;
+    left: 3px;
+    font-size: 18px;
+    animation: typing3 2s steps(40) forwards, cursor 0.4s step-end infinite alternate;
+    white-space: nowrap;
+    animation-delay: 3s;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@keyframes typing1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+        border-color: transparent;
+    }
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 30%;
+        opacity: 1;
+    }
+}
+
+@keyframes typing3 {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 28%;
+        opacity: 1;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+}
+
+.headingImage {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.headingImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content p {
+    margin-block: 10px;
+    line-height: 30px;
+    padding-block: 10px;
+    text-transform: capitalize;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
+}
+
+.about {
+    text-transform: capitalize;
+    margin-block: 40px;
+}
+
+.about h3 {
+    font-family: var(--font-family);
+    font-size: 35px;
+}
+
+.about p {
+    margin-block: 10px;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(197, 197, 197);
+}
+
+.about h4 {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.imageSlider {
+    margin-block: 80px;
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.images img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(116, 116, 116, 0.2);
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button {
+    outline: none;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    padding-inline: 40px;
+}
+
+.btn button i {
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.btn button i:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.socialMedia ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    list-style: none;
+    color: yellowgreen;
+}
+
+.socialMedia ul a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.socialMedia ul li:hover {
+    transition: transform 0.2s;
+}
+
+.socialMedia ul li:hover {
+    transform: translateY(-6px);
+}
+
+.socialMedia ul i {
+    color: white;
+}
+
+.socialMedia h4 {
+    font-family: var(--font-family);
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(47, 47, 47);
+    margin-block-start: 20px;
+}
